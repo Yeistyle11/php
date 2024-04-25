@@ -1,10 +1,10 @@
 <?php
 
-include_once("config.php");
-include_once("header.php"); 
+include_once("config.php"); 
 include_once("entidades/venta.php");
 
 $pg = "Inicio";
+include_once("header.php");
 
 $venta = new Venta();
 $facturacionMensual = $venta->obtenerFacturacionMensual(date('m'));
